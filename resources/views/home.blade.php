@@ -19,8 +19,8 @@
 
    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="text-center">Treni in partenza oggi</h2>
+            <div class="col-12 py-4">
+                <h2 class="text-center">Treni in partenza oggi:</h2>
             </div>
             @foreach ($today_trains as $train)
                 <div class="col-3 my-5 ">
@@ -36,8 +36,8 @@
                     <h6>Cancellato: {{$train->deleted}}</h6>
                 </div>
             @endforeach
-            <div class="col-12">
-                <h2 class="text-center">Storico Treni</h2>
+            <div class="col-12 py-4"">
+                <h2 class="text-center">Storico Treni:</h2>
             </div>
             @foreach ($trains as $train)
                 <div class="col-3 my-5 ">
