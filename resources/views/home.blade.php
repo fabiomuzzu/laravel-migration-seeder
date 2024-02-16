@@ -49,8 +49,8 @@
                     <h6>Orario di arrivo: {{$train->arrival_time}}</h6>
                     <h6>Codice Treno: {{$train->train_code}}</h6>
                     <h6>Numero Carrozze: {{$train->number_of_carriages}}</h6>
-                    <h6>In orario: {{$train->in_time}}</h6>
-                    <h6>Cancellato: {{$train->deleted}}</h6>
+                    <h6>In orario: {{$train->in_time ? 'Si' : 'No'}}</h6>
+                    <h6>Cancellato: {{$train->deleted ? 'Si' : 'No'}}</h6>
                 </div>
             @endforeach
         </div>
